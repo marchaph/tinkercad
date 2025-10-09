@@ -8,14 +8,20 @@
 <body>
   <a-scene>
     <a-assets>
-		<a-asset-item id="my-obj" src="https://marchaph.github.io/tinkercad/tinker.obj"></a-asset-item>
-        <a-asset-item id="my-mtl" src="https://marchaph.github.io/tinkercad/obj.mtl"></a-asset-item>
+		<a-asset-item id="my-model" src="https://github.com/marchaph/tinkercad/raw/refs/heads/main/demo.glb"></a-asset-item>
     </a-assets>
-
+<!--
     <a-entity obj-model="obj: #my-obj; mtl: #my-mtl" position="0 1.6 -3" visible="true"></a-entity>
-
+-->
     <a-sky color="#ECECEC"></a-sky>
+	  <a-plane
+        rotation="-90 0 0"
+        width="20"
+        height="20"
+        color="#7BC8A4"
+      ></a-plane>
   </a-scene>
 </body>
 
 </html>
+
