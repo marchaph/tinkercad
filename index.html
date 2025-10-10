@@ -17,7 +17,24 @@
         gltf-model="#myModel"
         position="0 0 -3"
         rotation="0 180 0"
-        scale="5 5 5">
+        scale="5 5 5"
+        
+         animation="
+                property: rotation;
+                from: 0 0 0;
+                to: 0 360 0;
+                dur: 2000;
+                easing: linear;
+                loop: true;
+                startEvents: click;
+            "
+            animation__2="
+                property: scale;
+                from: 2 2 2;
+                to: 0.5 0.5 0.5;
+                loop: false;
+                startEvents: click;
+            ">
       </a-entity>
 
       <!-- Add a camera and some light -->
@@ -27,6 +44,7 @@
     </a-scene>
   </body>
 </html>
+
 
 
 
