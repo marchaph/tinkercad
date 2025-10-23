@@ -8,16 +8,23 @@
       <a-entity light="type: directional; intensity: 1" position="1 1 1"></a-entity>
       <a-entity light="type: ambient; intensity: 0.5"></a-entity>
 
-      <!-- Load your Blender-exported model -->
+      <!-- Load your Blender-exported model
       <a-entity gltf-model="url(https://github.com/marchaph/tinkercad/raw/refs/heads/main/Scene.glb)" 
                 position="0 0 -3" 
                 scale="1 1 1"
                 rotation="0 180 0">
-      </a-entity>
+      </a-entity> -->
+
+      <a-assets>
+            <a-asset-item id="myModel" src="https://github.com/marchaph/tinkercad/raw/refs/heads/main/Scene3D.glb"></a-asset-item>
+      </a-assets>
+
+        <a-entity gltf-model="#myModel"></a-entity>
 
       <a-sky color="#ECECEC"></a-sky>
       <a-camera position="0 1.6 0"></a-camera>
     </a-scene>
   </body>
 </html>
+
 
