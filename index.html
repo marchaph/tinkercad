@@ -1,6 +1,7 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -17,15 +18,18 @@
 
       <a-assets>
             <a-asset-item id="myModel" src="Scene3D.glb"></a-asset-item>
+            <a-asset-item id="myAnimatedModel" src="DemoAnimation.glb"></a-asset-item>
       </a-assets>
 
         <a-entity gltf-model="#myModel"></a-entity>
-
+        <a-entity gltf-model="#myAnimatedModel" animation-mixer></a-entity>
+      
       <a-sky color="#ECECEC"></a-sky>
       <a-camera position="0 1.6 0"></a-camera>
     </a-scene>
   </body>
 </html>
+
 
 
 
